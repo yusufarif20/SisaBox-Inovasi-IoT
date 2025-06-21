@@ -27,7 +27,7 @@
       justify-content: space-between;
       align-items: center;
     }
-    .top-section img {
+    .top-section img.profile-img {
       width: 50px;
       height: 50px;
       border-radius: 50%;
@@ -35,10 +35,19 @@
     .points-box {
       background: white;
       color: black;
-      padding: 10px;
+      padding: 8px 52px;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin: 15px 0;
+      margin-top: 10px;
+      margin-left: 0;
+      width: max-content;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .points-box img {
+      width: 24px;
+      height: 24px;
     }
     .status-box {
       background: white;
@@ -72,12 +81,30 @@
     .news {
       margin: 15px;
     }
+    .news h3 {
+      margin-bottom: 10px;
+    }
     .news-card {
       background: white;
-      padding: 15px;
+      padding: 10px;
       border-radius: 10px;
       margin-bottom: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 10px;
+    }
+    .news-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .news-card .news-content {
+      flex: 1;
+    }
+    .news-card .news-content strong {
+      display: block;
+      margin-bottom: 5px;
     }
     .nav-bar {
       position: fixed;
@@ -104,12 +131,15 @@
         <strong>Angga</strong><br>
         <small>#001 🧃</small>
       </div>
-      <img src="profile.jpg" alt="Profile">
+      <img src="profile.jpg" alt="Profile" class="profile-img">
     </div>
     <div class="points-box">
-      <strong>🔳 POINT</strong>
-      <p style="font-size: 18px; font-weight: bold;">100000</p>
-      <small style="color: #00C12B">Tap for history</small>
+      <img src="wallet.png" alt="Dompet">
+      <div>
+        <strong>POINT</strong>
+        <p style="font-size: 18px; font-weight: bold;">100000</p>
+        <small style="color: #00C12B">Tap for history</small>
+      </div>
     </div>
   </div>
 
@@ -126,14 +156,21 @@
   </div>
 
   <div class="news">
+    <h3>Berita</h3>
     <div class="news-card">
-      <strong>republika</strong>
-      <p>Pemkot Depok Apresiasi Pasar Online dan Bank Sampah Sawangan Elok</p>
-      <small>melakukan pemilahan sampah juga bisa memberikan rezeki kepada orang lain</small>
+      <img src="berita1.jpg" alt="Berita 1">
+      <div class="news-content">
+        <strong>republika</strong>
+        <p>Pemkot Depok Apresiasi Pasar Online dan Bank Sampah Sawangan Elok</p>
+        <small>Melakukan pemilahan sampah juga bisa memberikan rezeki kepada orang lain</small>
+      </div>
     </div>
     <div class="news-card">
-      <strong>mojok.co</strong>
-      <p>Bank Sampah yang Menjadikan...</p>
+      <img src="berita2.jpg" alt="Berita 2">
+      <div class="news-content">
+        <strong>mojok.co</strong>
+        <p>Bank Sampah yang Menjadikan Sampah Bernilai</p>
+      </div>
     </div>
   </div>
 
