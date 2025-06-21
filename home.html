@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SisaBox App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #F5F5F5;
+    }
+    .top-section {
+      background-color: #00C12B;
+      color: white;
+      padding: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .top-section .profile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-section img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .points-box {
+      background: white;
+      color: black;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 15px 0;
+    }
+    .status-box {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 15px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .status-box.green h2 {
+      color: #00C12B;
+    }
+    .status-box.red h2 {
+      color: red;
+    }
+    .sensor-box {
+      display: flex;
+      justify-content: space-around;
+      margin: 15px;
+    }
+    .sensor-item {
+      background: white;
+      width: 45%;
+      height: 80px;
+      border-radius: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .news {
+      margin: 15px;
+    }
+    .news-card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .nav-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+    }
+    .nav-bar img {
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-section">
+    <div class="profile">
+      <div>
+        <p>Halo!,</p>
+        <strong>Angga</strong><br>
+        <small>#001 🧃</small>
+      </div>
+      <img src="profile.jpg" alt="Profile">
+    </div>
+    <div class="points-box">
+      <strong>🔳 POINT</strong>
+      <p style="font-size: 18px; font-weight: bold;">100000</p>
+      <small style="color: #00C12B">Tap for history</small>
+    </div>
+  </div>
+
+  <!-- Status Box - Ganti class ke red/green sesuai kondisi -->
+  <div class="status-box green">
+    <h2>waktu panen</h2>
+    <p>Sampah berhasil di daur ulang!</p>
+    <small style="color: gray;">SisaBox</small>
+  </div>
+
+  <div class="sensor-box">
+    <div class="sensor-item">Suhu</div>
+    <div class="sensor-item">Kelembaban</div>
+  </div>
+
+  <div class="news">
+    <div class="news-card">
+      <strong>republika</strong>
+      <p>Pemkot Depok Apresiasi Pasar Online dan Bank Sampah Sawangan Elok</p>
+      <small>melakukan pemilahan sampah juga bisa memberikan rezeki kepada orang lain</small>
+    </div>
+    <div class="news-card">
+      <strong>mojok.co</strong>
+      <p>Bank Sampah yang Menjadikan...</p>
+    </div>
+  </div>
+
+  <div class="nav-bar">
+    <img src="home.png" alt="Home">
+    <img src="history.png" alt="History">
+    <img src="scan.png" alt="Scan">
+    <img src="game.png" alt="Game">
+    <img src="settings.png" alt="Settings">
+  </div>
+</body>
+</html>
